@@ -1,14 +1,93 @@
 UNRELEASED CHANGES:
 
-*
+* Fix the access to upgrade account view
 
 RELEASED VERSIONS:
+
+v0.6.5 - 2017-08-28
+-------------------
+
+* Add a new welcome screen for new users
+* Fix typo when displaying message of no existing contact to link when adding a child
+* Monicahq.com only: add limitations to free accounts
+
+v0.6.4 - 2017-08-23
+-------------------
+
+* Add restriction of 50 characters for a first name, and 100 characters for a last name
+* Add support for storing uploaded files on s3
+* Sort contacts by first name, last name when linking significant others and kids
+* Remove automatic uppercase of the first name
+* Remove beginning / ending spaces in names when adding / saving a contact
+* Fix birthday reminder creation bug on vCard import
+* Fix search bar being hard to use
+
+v0.6.3 - 2017-08-16
+-------------------
+
+* Fix kids not being able to be removed
+* Fix some CSRF potential vulnerabilities
+
+v0.6.2 - 2017-08-16
+-------------------
+
+* Add support for Markdown for the notes and call logs
+
+v0.6.1 - 2017-08-15
+-------------------
+
+* Fix delete account bug
+* Fix kid deletion bug
+* Fix gift creation
+
+v0.6.0 - 2017-08-14
+-------------------
+
+* Add ability to set significant other and kids as contact.
+* Add Italian translation
+* Add debt total below a contacts debt
+* Add world currencies
+* Add German translation
+
+v0.5.0 - 2017-07-24
+-------------------
+
+* Add version checking.
+* Add ability to search various fields in contacts through the top-nav search.
+* Fix gift view not being shown.
+
+v0.4.2 - 2017-07-18
+-------------------
+
+New features:
+* Add Indian rupee currency.
+* Add Danish krone currency.
+* Add Czech translation.
+
+Improvements:
+* Fix https issue on password reset.
+
+v0.4.1 - 2017-07-13
+-------------------
+
+* Fix reminders not being sent introduced by previous version.
+
+v0.4.0 - 2017-07-13
+-------------------
+
+New features:
+* Add ability to keep track of phone calls.
+
+Improvements:
+* Fix Google Contact instructions link on the Import screen.
+* Input field are now automatically selected when a radio button is checked.
+* Many small bug fixes.
 
 v0.3.0 - 2017-07-04
 -------------------
 
 New features:
-* Add supprort for organizing people into tags (requires `bower update` for dev environment).
+* Add support for organizing people into tags (requires `bower update` for dev environment).
 * Add ability to filter contacts per tags on the contact list.
 
 Improvements:

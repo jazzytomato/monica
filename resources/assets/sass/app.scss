@@ -1,6 +1,8 @@
 @import "_custom_bootstrap";
 @import "../../vendor/hint.css/hint.min";
 
+@import "../../vendor/tachyons/css/tachyons.min";
+
 // Tags for a contact
 @import "../../vendor/jquery.tagsinput/dist/jquery.tagsinput.min";
 
@@ -22,6 +24,7 @@ $border-color: #dfdfdf;
 @import "journal";
 @import "marketing";
 @import "settings";
+@import "modal";
 
 // Utilities
 .border-bottom {
@@ -38,6 +41,10 @@ $border-color: #dfdfdf;
 
 .border-left {
   border-left: 1px solid $border-color;
+}
+
+.padding-left-none {
+  padding-left: 0;
 }
 
 .boxed {
@@ -170,7 +177,7 @@ input:disabled {
   margin: 20px 0;
 }
 
-.modal {
+.central-form {
   margin-top: 40px;
 
   h2 {
@@ -210,6 +217,21 @@ input:disabled {
   .form-group:not(:last-child) {
     border-bottom: 1px solid #eee;
     padding-bottom: 20px;
+  }
+
+  .nav {
+    margin-top: 40px;
+
+    .nav-link {
+      text-decoration: none;
+    }
+  }
+
+  .tab-content {
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
   }
 }
 
@@ -282,6 +304,11 @@ input:disabled {
   &:disabled {
     background-image: linear-gradient(-180deg, #63b175 0%, #61986e 90%);
   }
+
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
 }
 
 .btn-primary {
@@ -347,6 +374,33 @@ footer {
   li {
     font-size: 12px;
     margin-right: 15px;
+  }
+
+  .badge-success {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .show-version {
+    text-align: left;
+
+    h2 {
+      font-size: 16px;
+    }
+
+    .note {
+      margin-bottom: 20px;
+
+      ul {
+        list-style-type: disc;
+      }
+
+      li {
+        display: block;
+        font-size: 15px;
+        text-align: left;
+      }
+    }
   }
 }
 

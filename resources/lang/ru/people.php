@@ -17,6 +17,11 @@ return [
     'people_list_filter_tag' => 'Showing all the contacts tagged with <span class="pretty-tag">:name</span>',
     'people_list_clear_filter' => 'Clear filter',
     'people_list_contacts_per_tags' => '{0} 0 contact|{1,1} 1 contact|{2,*} :count contacts',
+    'people_search' => 'Search your contacts...',
+    'people_search_no_results' => 'No relevant contacts found :(',
+    'people_list_account_usage' => 'Your account usage: :current/:limit contacts',
+    'people_list_account_upgrade_title' => 'Upgrade your account to unlock it to its full potential.',
+    'people_list_account_upgrade_cta' => 'Upgrade now',
 
     // people add
     'people_add_title' => 'Добавить человека',
@@ -44,6 +49,21 @@ return [
 
     // Header
     'edit_contact_information' => 'Редактировать контакты',
+    'call_button' => 'Log a call',
+
+    // Calls
+    'modal_call_title' => 'Log a call',
+    'modal_call_comment' => 'What did you talk about? (optional)',
+    'modal_call_date' => 'The phone call happened earlier today.',
+    'modal_call_change' => 'Change',
+    'modal_call_exact_date' => 'The phone call happened on',
+    'calls_add_success' => 'The phone call has been saved.',
+    'call_delete_confirmation' => 'Are you sure you want to delete this call?',
+    'call_delete_success' => 'The call has been deleted successfully',
+    'call_title' => 'Phone calls',
+    'call_empty_comment' => 'No details',
+    'call_blank_title' => 'Keep track of the phone calls you\'ve done with :name',
+    'call_blank_desc' => 'You called :name',
 
     // age - birthday
     'birthdate_not_set' => 'День рождения не указан',
@@ -106,8 +126,6 @@ return [
     'reminders_blank_add_activity' => 'Добавить напоминание',
     'reminders_add_title' => 'О чём, связанном с :name, вам напомнить?',
     'reminders_add_description' => 'Напомнить о:',
-    'reminders_add_predefined' => 'Предопределённое напоминание',
-    'reminders_add_custom' => 'Специальное напоминание',
     'reminders_add_next_time' => 'Когда в следующий раз вы хотите получить напоминание?',
     'reminders_add_once' => 'Напомнить один раз',
     'reminders_add_recurrent' => 'Повторять напоминание с периодичностью: ',
@@ -126,14 +144,12 @@ return [
     'reminders_next_expected_date' => 'в',
     'reminders_cta' => 'Добавить напоминание',
     'reminders_description' => 'По каждому из напоминаний выше мы отправим вам письмо. Они высылаются по утрам',
-    'reminders_frequency' => 'Периодичность',
-    'reminders_date' => 'Дата',
-    'reminders_content' => 'Название',
-    'reminders_actions' => 'Действия',
     'reminders_one_time' => 'один раз',
     'reminders_type_week' => 'неделя',
     'reminders_type_month' => 'месяц',
     'reminders_type_year' => 'год',
+    'reminders_birthday' => 'Birthdate of :name',
+    'reminders_free_plan_warning' => 'You are on the Free plan. No emails are sent on this plan. To receive your reminders by email, upgrade your account.',
 
     // significant other
     'significant_other_sidebar_title' => 'Вторая половинка',
@@ -148,10 +164,17 @@ return [
     'significant_other_add_cta' => 'Добавить вторую половинку',
     'significant_other_edit_cta' => 'Редактировать вторую половинку',
     'significant_other_delete_confirmation' => 'Вы уверены что хотите удалить эту вторую половинку? Восстановление невозможно.',
+    'significant_other_unlink_confirmation' => 'Are you sure you want to delete this relationship? This significant other will not be deleted - only the relationship between the two.',
     'significant_other_add_success' => 'Вторая половинка была успешно добавлена',
     'significant_other_edit_success' => 'Вторая половинка была успешно обновлена',
     'significant_other_delete_success' => 'Вторая половинка была успешно удалена',
     'significant_other_add_birthday_reminder' => 'Поздравьте с днём рождения :name, вторую половинку :contact_firstname',
+    'significant_other_add_person' => 'Add a new person',
+    'significant_other_link_existing_contact' => 'Link existing contact',
+    'significant_other_add_no_existing_contact' => 'You don\'t have any contacts who can be :name\'s significant others at the moment.',
+    'significant_other_add_existing_contact' => 'Select an existing contact as the significant other for :name',
+    'contact_add_also_create_contact' => 'Create a Contact entry for this person.',
+    'contact_add_add_description' => 'This will let you treat this significant other like any other contact.',
 
     // kids
     'kids_sidebar_title' => 'Дети',
@@ -163,6 +186,11 @@ return [
     'kids_add_gender' => 'Пол',
     'kids_add_firstname' => 'Имя',
     'kids_add_firstname_help' => 'Мы предполагаем что имя: :name',
+    'kids_add_lastname' => 'Last name (optional)',
+    'kids_add_also_create' => 'Also create a Contact entry for this person.',
+    'kids_add_also_desc' => 'This will let you treat this kid like any other contact.',
+    'kids_add_no_existing_contact' => 'You don\'t have any contacts who can be :name\'s kid at the moment.',
+    'kids_add_existing_contact' => 'Select an existing contact as the kid for :name',
     'kids_add_probably' => 'Этому ребёнку вероятно',
     'kids_add_probably_yo' => 'лет',
     'kids_add_exact' => 'Я знаю точную дату рождения и она:',
@@ -174,6 +202,7 @@ return [
     'kids_update_success' => 'Запись о ребёнке была успешно обновлена!',
     'kids_delete_success' => 'Запись о ребёнке была удалена!',
     'kids_add_birthday_reminder' => 'Поздравьте с днём рождения :name, ребёнка :contact_firstname',
+    'kids_unlink_confirmation' => 'Are you sure you want to delete this relationship? This kid will not be deleted - only the relationship between the two.',
 
     // tasks
     'tasks_desc' => 'Управляйте Задачами связанными с :name',
@@ -199,7 +228,7 @@ return [
     'activity_type_group_sport' => 'Спорт',
     'activity_type_group_food' => 'Еда',
     'activity_type_group_cultural_activities' => 'Культурные',
-    'activity_type_just_hanged_out' => 'просто повеселились',
+    'activity_type_just_hung_out' => 'просто повеселились',
     'activity_type_watched_movie_at_home' => 'смотрели кино дома',
     'activity_type_talked_at_home' => 'разговаривали дома',
     'activity_type_did_sport_activities_together' => 'занимались спортом вместе',

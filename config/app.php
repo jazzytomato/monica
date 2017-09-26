@@ -1,4 +1,5 @@
 <?php
+
 use App\Helpers\MoneyHelper;
 
 return [
@@ -53,7 +54,7 @@ return [
     |
     */
 
-    'timezone' => env('APP_DEFAULT_TIMEZONE', 'America/New_York'),
+    'timezone' => env('APP_DEFAULT_TIMEZONE', 'US/Eastern'),
 
     /*
     |--------------------------------------------------------------------------
@@ -160,6 +161,7 @@ return [
         Laravel\Socialite\SocialiteServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Laravel\Cashier\CashierServiceProvider::class,
+        Sentry\SentryLaravel\SentryLaravelServiceProvider::class,
     ],
 
     /*
@@ -210,6 +212,7 @@ return [
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'MoneyHelper' => App\Helpers\MoneyHelper::class,
+        'Sentry' => Sentry\SentryLaravel\SentryFacade::class,
     ],
 
 ];

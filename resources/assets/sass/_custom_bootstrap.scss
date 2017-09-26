@@ -42,15 +42,15 @@ $font-size-root: 14px;
 // @import "bootstrap/labels";
 // @import "bootstrap/jumbotron";
 @import "../../vendor/bootstrap/scss/alert";
-// @import "bootstrap/progress";
+// @import "../../vendor/bootstrap/scss/progress";
 // @import "bootstrap/media";
 // @import "bootstrap/list-group";
 // @import "bootstrap/responsive-embed";
-// @import "bootstrap/close";
+@import "../../vendor/bootstrap/scss/close";
 
 // Components w/ JavaScript
-// @import "bootstrap/modal";
-// @import "bootstrap/tooltip";
+@import "../../vendor/bootstrap/scss/modal";
+//@import "../../vendor/bootstrap/tooltip";
 // @import "bootstrap/popover";
 // @import "bootstrap/carousel";
 
